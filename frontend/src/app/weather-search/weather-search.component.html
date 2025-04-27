@@ -1,0 +1,8 @@
+<div class="search-container">
+  <input [(ngModel)]="city" placeholder="Stadt eingeben" />
+  <button (click)="searchWeather()">Suche</button>
+</div>
+<div *ngIf="errorMessage" class="alert alert-danger mt-3">
+  {{ errorMessage }}
+</div>
+

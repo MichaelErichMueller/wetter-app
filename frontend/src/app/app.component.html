@@ -1,0 +1,9 @@
+<div class="container mt-5 p-5 bg-light border rounded-3">
+  <app-header></app-header>
+
+  <app-weather-search (weatherListUpdated)="updateWeatherList($event)"></app-weather-search>
+
+  <hr />
+
+  <app-weather-result [weatherList]="weatherList"></app-weather-result>
+</div>

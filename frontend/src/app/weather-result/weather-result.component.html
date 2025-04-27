@@ -1,0 +1,9 @@
+<div *ngFor="let weather of weatherList" class="mt-4">
+  <h5>{{ weather.date | date:'dd.MM.yyyy' }}</h5>
+  <div *ngFor="let period of weather.periods" class="card mb-3 p-3">
+    <strong>{{ period.period }} ({{ period.time }}):</strong>
+    <div>{{ period.temperature }} °C</div>
+    <div>{{ period.description }}</div>
+    <div>💧 {{ period.precipitationProbability }}%</div>
+  </div>
+</div>

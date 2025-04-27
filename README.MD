@@ -1,0 +1,1 @@
+wetter app mit Angular, dotnet, grqphsql, und Desktop Docker.
